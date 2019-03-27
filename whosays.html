@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="http://icons.veryicon.com/16/Movie%20%26%20TV/Simpsons%20Vol.%2001/Public%20Figures%20Mayor%20Diamond%20Joe%20Quimby.png"/>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Trivia Los Simpsons</title>
+  </head>
+  <body onload="trivia()">
+    <h1 id="categoryTittle">¿Quién dijo...?</h1>
+    <div id="question1">
+      <h4>1.- "¡Auxilio! Me está tocando mi parte privada"</h4>
+      <form>
+        <input type="radio" name="answer" id="answerA1"> Lisa<br>
+        <input type="radio" name="answer" id="answerA2"> Milhouse<br>
+        <input type="radio" name="answer" id="answerA3" class="correct"> Rafa<br>
+      </form>
+    </div>
+    <div id="question2">
+      <h4>2.- "No se metan conmigo, ¡Tengo chispitas!"</h4>
+      <form>
+        <input type="radio" name="answer" id="answerA4"> Jefe Gorgory<br>
+        <input type="radio" class="correct" name="answer" id="answerA5"> Marge<br>
+        <input type="radio" name="answer" id="answerA6"> Flanders<br>
+      </form>
+    </div>
+    <div id="question3">
+      <h4>3.- "¡Ya cómete la maldita naranja!"</h4>
+      <form>
+        <input type="radio" name="answer" id="answerA7"> Homero<br>
+        <input type="radio" class="correct" name="answer" id="answerA8"> El abuelo Simpson<br>
+        <input type="radio" name="answer" id="answerA9"> Lionel Hutz<br>
+      </form>
+    </div>
+    <button type="button" id="nextQuestion">Siguiente</button>
+    <div id="score">
+      <h1>Tu puntuación final es:</h1>
+      <h2 id="finalScore"></h2>
+      <p>¿Quieres volver a jugar?</p>
+      <div>
+        <form action="welcome.html">
+          <button type="submit" class="finalBtns" name="button">Sí</button>
+        </form>
+        <form action="thanks.html">
+          <button type="submit" class="finalBtns" name="button">No</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
