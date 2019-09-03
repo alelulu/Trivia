@@ -8,6 +8,10 @@ function saveUser(){
       equivalente a hacer click en un boton type="submit"
     }*/
   }
+  else {
+    let nameAlert = document.getElementById("name_alert")
+    nameAlert.style.display = "block"
+  }
 }
 function setName(){
   let greetings = document.getElementById("greetings"); /* la variable greetings está

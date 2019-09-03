@@ -19,24 +19,36 @@ h2{
   font-size: 25px;
   color: black;
 }
-
-button {
-  font-weight: bold;
-  padding: 6px 15px;
-  background-color: #68addf;
-  color: black;
-  border: 1px solid #ccc;
+.name-input {
+  height: 35px;
+  font-style: italic;
+  width: 200px;
+  border: 1px solid #de4221;
+  margin-bottom: 10px;
+  padding-left: 5px
 }
-
-button.b1 {
-  width: 170px;
+.game-button {
+  width: 200px;
+  height: 35px;
+  background-color: #de4221;
+  color: #ffffff;
+  box-shadow: 2px 2px #5a5a5a;
+  border: none;
 }
-
-button.finalBtns {
-  margin-top: 5px;
-  width: 50px;
+.game-button:hover {
+  box-shadow: 0px 0px;
+  color: #ffffff;
+  box-shadow: -2px -2px #5a5a5a;
 }
-
+#name_alert {
+  background-color: #ffd521;
+  border: none;
+  color: #de4221;
+  font-size: large 
+}
+/* .container {
+  height: 100%
+} */
 h2#finalScore {
   color: white;
   font-size: 100px;
@@ -48,7 +60,47 @@ h2#finalScore {
 input#user {
   padding: 5px 15px;
 }
-button#nextQuestion {
-  margin-top: 10px;
+.page-title{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
-
+.indication{
+  margin-top: 1rem
+}
+.alert-col {
+  text-align: center
+}
+#name_alert {
+  text-align: center;
+  margin-top: 3px;
+}
+.index-img{
+  width: 30%;
+  margin-top: 1rem;
+}
+#img-welcome {
+  width: 60%
+}
+.question-form {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 600px) {
+  .index-img {
+    width: 70%
+  }
+  #img-welcome {
+    width: 90%
+  }
+  .game-button {
+    margin-bottom: 10px
+  }
+  h4 {
+    margin-top: 4rem
+  }
+  #name_alert {
+    text-align: center;
+    margin-top: -3px !important;
+    padding-top: 2px !important;
+  }
+}
